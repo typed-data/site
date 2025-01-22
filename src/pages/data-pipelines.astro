@@ -2,77 +2,29 @@
 import Layout from '../components/layout.astro';
 ---
 
-<style>
-.steps {
-  background: var(--light);
-  display: grid;
-  gap: 2rem;
-  grid-template-columns: min(90vw, 250px);
-  justify-content: center;
-  margin-top: 3rem;
-  padding: 5rem 5vw;
-  width: 100vw;
-}
-
-@media (min-width: 550px) {
-  .steps {
-    grid-template-columns: repeat(2, min(calc(50% - 1rem), 250px));
-  }
-}
-
-@media (min-width: 1050px) {
-  .steps {
-    grid-template-columns: repeat(4, min(calc(25% - 1.5rem), 250px));
-  }
-}
-
-.step {
-  background: var(--white);
-  border: 1px solid var(--lightBorder);
-  border-radius: var(--card-radius);
-  display: flex;
-  flex-direction: column;
-  font-size: 0.75rem;
-  padding: 1rem 1.5rem 1.5rem;
-  text-align: left;
-  box-shadow: 0 2px 4px rgb(14 30 37 / 12%);
-}
-
-.stepHeading {
-  font-size: 1rem;
-  font-weight: 600;
-  margin: 0;
-}
-
-
-</style>
 
 <Layout
   title="Typed Data"
   description="Data pipelines"
   home
 >
-  <main class="steps">
-    <section class="step">
-      <h2 class="stepHeading">Datalake</h2>
-      <p>
+  <main >
+    <div class="grid grid-cols-1 gap-6 sm:grid-cols-3">
+      <div>
+      <h2 class="stepHeading">Data Lake</h2>
         ML input data is made out of labels and multi modal sensor data (text, images, ...). Here are some thoughts on <a href="/data-format">data format</a>.
-      </p>
-    </section>
+      </div>
 
-    <section class="step">
+      <div>
       <h2 class="stepHeading">Typed data</h2>
-      <p>
         Data processing pipeline using typed languages.
-      </p>
-    </section>
+      </div>
 
-    <section class="step">
+      <div>
       <h2 class="stepHeading">Training loop</h2>
-      <p>
          Batching, loading on the GPU and the training loop.
-      </p>
-    </section>
+      </div>
+    <div>
 
     
   </main>
