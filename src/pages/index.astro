@@ -11,15 +11,15 @@ import Layout from '../components/layout.astro';
 >
   <main>
 
-    <p>
+    <p class="mb-4">
     ML <a href="/data-pipelines">data pipelines</a> sit between the data provider
     and the ML training loop. The processing needs to be high-performance in order
     to obtain good GPU utilization, but it needs to be flexible enough to support
     the typical ML experimentation.
     </p>
 
-    <p>
-    Python is frequently the first choice for ML data pipelines.
+    <p class="mb-4">
+    <b>Python</b> is frequently the first choice for ML data pipelines.
     Dictionaries and dataframes (Panda, Polars) are abstractions
     that are flexible. If used correctly they are also 
     performant, but scaling the pipelines and maintaining them
@@ -28,15 +28,15 @@ import Layout from '../components/layout.astro';
     evolve the design.
     </p>
 
-    <p>
-    Rust promises better performance and tooling around basic
+    <p class="mb-4">
+    <b>Rust</b> promises better performance and tooling around basic
     performance management. However the code is a lot more
     verbose and memory considerations can slow down development,
     specially for devs not familiar with the language.
     </p>
 
     <p>
-    Typed Data explores macros, code generation and framework design
+    <b>Typed Data</b> explores macros, code generation and framework design
     to reduce the cognitive burden when using Rust
     for data pipelines. Other languages will be evaluated
     in the future.

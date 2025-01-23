@@ -1,31 +1,28 @@
 ---
-import Layout from '../components/layout.astro';
+import Layout from "../components/layout.astro";
 ---
 
-
-<Layout
-  title="Typed Data"
-  description="Data pipelines"
-  home
->
-  <main >
+<Layout title="Typed Data" description="Data pipelines" home>
+  <main>
     <div class="grid grid-cols-1 gap-6 sm:grid-cols-3">
       <div>
-      <h2 class="stepHeading">Data Lake</h2>
-        ML input data is made out of labels and multi modal sensor data (text, images, ...). Here are some thoughts on <a href="/data-format">data format</a>.
+        <h2 class="font-extrabold">Data Lake</h2>
+        ML input data is made out of labels and multi modal sensor data (text, images,
+        ...). Here are some thoughts on <a href="/data-format">data format</a>.
       </div>
 
       <div>
-      <h2 class="stepHeading">Typed data</h2>
+        <h2 class="font-extrabold">Typed data</h2>
         Data processing pipeline using typed languages.
       </div>
 
       <div>
-      <h2 class="stepHeading">Training loop</h2>
-         Batching, loading on the GPU and the training loop.
+        <h2 class="font-extrabold">Training loop</h2>
+        Batching, loading on the GPU and the training loop. Rust provides some <a
+          href="/training-frameworks">training frameworks</a
+        >.
       </div>
-    <div>
-
-    
-  </main>
-</Layout>
+      <div></div>
+    </div>
+  </main></Layout
+>
